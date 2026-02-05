@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gold Trader Sam</title>
+
+  <!-- Preload Telegram domain for faster first click -->
+  <link rel="preconnect" href="https://t.me" crossorigin />
+  <link rel="dns-prefetch" href="https://t.me" />
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background:#0f0f0f;
+      color:#fff;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+    .container { max-width:500px; width:100%; }
+    .logo-circle {
+      width:180px; height:180px; margin:0 auto 30px;
+      background:#000; border-radius:50%;
+      border:3px solid #ffd700;
+      display:flex; align-items:center; justify-content:center;
+      overflow:hidden;
+    }
+    .logo-circle img { width:80%; height:auto; }
+    h1 { font-size:2.8rem; margin-bottom:12px; }
+    .subtitle { font-size:1.4rem; color:#ccc; margin-bottom:8px; }
+    .description { font-size:1.15rem; line-height:1.5; margin:20px 0 30px; color:#e0e0e0; }
+    .markets { font-size:1.3rem; font-weight:bold; color:#ffd700; margin:10px 0 40px; }
+    
+    .cta-button {
+      display:inline-flex;
+      align-items:center;
+      background:linear-gradient(135deg, #00cc44, #009933);
+      color:white;
+      font-size:1.3rem; font-weight:bold;
+      padding:18px 40px;
+      border-radius:50px;
+      text-decoration:none;
+      margin:20px 0;
+      box-shadow:0 8px 20px rgba(0,200,80,0.35);
+      transition:all 0.25s ease;
+      position:relative;
+      overflow:hidden;
+      border:none;
+      cursor:pointer;
+    }
+    .cta-button:hover { transform:translateY(-3px); box-shadow:0 12px 30px rgba(0,200,80,0.5); }
+    .rocket { font-size:1.4rem; margin-right:10px; }
+    
+    /* Optional micro loading state on click */
+    .cta-button.loading::after {
+      content:"";
+      position:absolute; inset:0;
+      background:rgba(0,0,0,0.15);
+      animation: pulse 1.5s infinite;
+      pointer-events:none;
+    }
+    @keyframes pulse { 0%,100% { opacity:0; } 50% { opacity:0.4; } }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo-circle">
+      <!-- Replace with your actual logo URL -->
+      <img src="https://via.placeholder.com/140x140/000/ffd700?text=Lion+Logo" alt="Gold Trader Sam Logo">
+    </div>
+
+    <h1>Gold Trader Sam</h1>
+    <h2 class="subtitle">Daily FREE Signals & Trading Education</h2>
+    
+    <div class="description">
+      Join thousands of traders getting daily free signals and high-quality education — no cost, no catch.
+    </div>
+    
+    <div class="markets">Gold | Crypto | Forex</div>
+
+    <!-- Optimized Telegram join link -->
+    <a 
+      href="https://t.me/yourchannelusername" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="cta-button"
+      id="joinBtn"
+    >
+      <span class="rocket">🚀</span> Join Free Telegram Channel
+    </a>
+  </div>
+
+  <!-- Optional: tiny script for micro loading feedback -->
+  <script>
+    document.getElementById('joinBtn').addEventListener('click', function() {
+      this.classList.add('loading');
+      setTimeout(() => this.classList.remove('loading'), 600);
+    });
+  </script>
+
+</body>
+</html>
