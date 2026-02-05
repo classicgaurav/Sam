@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gold Trader Sam</title>
-
+  
   <!-- Preload Telegram for faster click -->
   <link rel="preconnect" href="https://t.me" crossorigin />
   <link rel="dns-prefetch" href="https://t.me" />
-
+  
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
@@ -24,7 +24,6 @@
       padding:18px;
     }
     .container { max-width:450px; width:100%; }
-
     .logo-circle {
       width:162px; height:162px; margin:0 auto 27px;
       background:#000;
@@ -34,16 +33,14 @@
       overflow:hidden;
     }
     .logo-circle img {
-      width:90%;              /* Adjusted for better fit – your lion + text should fill nicely */
+      width:90%;
       height:auto;
       object-fit:contain;
     }
-
     h1 { font-size:2.5rem; margin-bottom:11px; }
     .subtitle { font-size:1.25rem; color:#ccc; margin-bottom:7px; }
     .description { font-size:1.05rem; line-height:1.5; margin:18px 0 27px; color:#e0e0e0; }
     .markets { font-size:1.17rem; font-weight:bold; color:#ffd700; margin:9px 0 36px; }
-
     .cta-button {
       display:inline-flex;
       align-items:center;
@@ -63,7 +60,6 @@
     }
     .cta-button:hover { transform:translateY(-3px); box-shadow:0 11px 27px rgba(0,200,80,0.5); }
     .rocket { font-size:1.25rem; margin-right:9px; }
-
     .cta-button.loading::after {
       content:"";
       position:absolute; inset:0;
@@ -75,27 +71,19 @@
   </style>
 </head>
 <body>
-
   <div class="container">
     <div class="logo-circle">
-      <img 
-        src="GOLD TRADER SAM LOGO.png" 
-        alt="Gold Trader Sam Logo"
-      >
+      <img src="GOLD TRADER SAM LOGO.png" alt="Gold Trader Sam Logo">
     </div>
-
     <h1>Gold Trader Sam</h1>
     <h2 class="subtitle">Daily FREE Signals & Trading Education</h2>
-    
     <div class="description">
       Join thousands of traders getting daily free signals and high-quality education — no cost, no catch.
     </div>
-    
     <div class="markets">Gold | Crypto | Forex</div>
-
-    <a 
-      href="https://t.me/yourchannelusername" 
-      target="_blank" 
+    <a
+      href="https://t.me/+oi6gElSFOcs3YTBl"
+      target="_blank"
       rel="noopener noreferrer"
       class="cta-button"
       id="joinBtn"
@@ -103,13 +91,12 @@
       <span class="rocket">🚀</span> Join Free Telegram Channel
     </a>
   </div>
-
+  
   <script>
     document.getElementById('joinBtn').addEventListener('click', function() {
       this.classList.add('loading');
       setTimeout(() => this.classList.remove('loading'), 600);
     });
   </script>
-
 </body>
 </html>
